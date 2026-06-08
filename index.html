@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- head -->
+<head>
+  <script>
+    (function () {
+        var a_idx = 0;
+        window.onclick = function (event) {
+            var a = new Array("✨", "🤖", "📚", "🎹", "🎵", "💗");
+
+            var heart = document.createElement("b");
+            heart.onselectstart = new Function('event.returnValue=false');
+
+            document.body.appendChild(heart).innerHTML = a[a_idx];
+            a_idx = (a_idx + 1) % a.length;
+            heart.style.cssText = "position: fixed;left:-100%;";
+
+            var f = 16, 
+                x = event.clientX - f / 2, 
+                y = event.clientY - f,
+                c = randomColor(), 
+                a = 1,
+                s = 1.2; 
+
+            var timer = setInterval(function () { 
+                if (a <= 0) {
+                    document.body.removeChild(heart);
+                    clearInterval(timer);
+                } else {
+                    heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+                        c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+                        s + ");";
+
+                    y--;
+                    a -= 0.016;
+                    s += 0.002;
+                }
+            }, 15)
+
+        }
+        function randomColor() {
+
+            return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+            .random() * 255)) + ")";
+
+        }
+    }());
+
+  </script>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Xinhao Ji   |   姬歆淏</title>
+
+
+
+  <meta name="author" content="Xinhao Ji">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" type="image/png" href="images/icon.jpg">
+</head>
+
+<!-- bib hide -->
+<script type="text/javascript">
+  function hideshow(which){
+  if (!document.getElementById)
+  return
+  if (which.style.display=="block")
+  which.style.display="none"
+  else
+  which.style.display="block"
+  }
+
+
+  </script>
+
+
+
+
+
+<!-- body -->
+<body>
+
+  <!-- self-intro --> 
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2%;width:55%;vertical-align:middle">
+              <p style="text-align:center">
+                <name> Xinhao Ji | 姬歆淏</name>
+                <!-- <span style="font-size:20px ">将鼠标指向这里:</span>
+                <a style="color:#3300FF; font-size:20px; font-style:italic " onMouseMove="move()" onMouseOut="return out();">将飞出一个标记</a> -->
+              </p>
+              <p style="text-align: justify">
+                <intro>I am an undergraduate majoring in Applied Physics at the School of EECS of Peking University, expected to graduate in June 2027.
+                  I am advised by Prof. <a href="https://pure.nwpu.edu.cn/zh/persons/dingwen-zhang/" target="_blank">
+                    <d>Dingwen Zhang</d></a> at Northwestern Polytechnical University (NWPU),
+                  and Prof. <a href="https://zzh-tech.github.io/" target="_blank">
+                    <d>Zhihang Zhong</d></a> at Shanghai Jiao Tong University (SJTU).
+                  From March to June 2026, I will conduct a research internship at PsiBot, advised by Prof.
+                  <a href="https://yangyaodong.com/" target="_blank"><d>Yaodong Yang</d></a>.
+                  Starting in June 2026, I will join as an incoming visiting student advised by Prof.
+                  <a href="https://liuziwei7.github.io/" target="_blank"><d>Ziwei Liu</d></a> at MMLab@NTU.
+                  My research interests lie in 3D vision & robotics and world models.
+                  </intro>
+              <p style="text-align:center">
+                <a href="mailto:jixinhao@stu.pku.edu.cn" target="_blank">Email (PKU)</a> &nbsp/&nbsp
+                <a href="mailto:jixinhaopku614@gmail.com" target="_blank">Email (Gmail)</a> &nbsp/&nbsp
+                <a href="https://github.com/XinhaoJi" target="_blank">Github</a>
+              </p>
+            </td>
+            <td style="padding:0%; width:26%; max-width:26%;"> 
+              <br>
+           
+              <img style="padding:1%; width:100%; max-width:80%;  display: block; margin-left: auto; margin-right: auto; " alt="profile photo" src="images/xinhao.jpg">
+              <div style="text-align:center">
+                <style>
+                  .threesolid{
+                    font-size: 20px;
+                    font-family: cursive;
+                    color:#454545;
+                    text-shadow:0px 1px 0px #c0c0c0,
+                      0px 2px 0px #b0b0b0,
+                      0px 3px 0px #a0a0a0,
+                      0px 4px 0px #909090,
+                      0px 5px 10px rgba(0, 0, 0, .9);
+                  } 
+                  </style>
+                <!-- <a href="https://www.quoteslyfe.com/images/collection2/quotations331/Don-t-be-afraid-to-start-over-331234.jpg" target="_blank"><div class="threesolid">quote of the day</div></a> -->
+              </div>
+            
+              <!-- <a href="https://hits.seeyoufarm.com" target="_blank">
+                <img 
+                  src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fselina2023.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"
+                  style="display: block; margin-left: auto; margin-right: auto; width: 55%;"/>
+              </a> -->
+            </td>
+            <!-- <td style="padding:5%;width:37%;max-width:37%"> 
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/face3.jpg" class="hoverZoomLink">
+              <a href="https://hits.seeyoufarm.com" target="_blank"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgeng-haoran.github.io&count_bg=%23FF8400&title_bg=%23545353&icon=tableau.svg&icon_color=%23F3F209&title=hits&edge_flat=false"/></a>
+            </td> -->
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    </tr>
+  </tbody></table>
+
+  
+
+  <!-- Research -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <br>
+    <heading>Research</heading>
+    <br>
+    <!-- Holi-Spatial -->
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <video style="width:100%;max-width:100%" autoplay="" loop="" playsinline="" muted="">
+          <source src="images/holispatial.mp4" type="video/mp4">
+        </video>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://visionary-laboratory.github.io/holi-spatial/" target="_blank">
+          <papertitle><br>Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence</papertitle>
+        </a>
+        <br>
+        Yuanyuan Gao*,
+        Hao Li*,
+        Yifei Liu*,
+        <strong>Xinhao Ji</strong>*,
+        Yuning Gong*,
+        Yuanjun Liao,
+        Fangfu Liu,
+        Manyuan Zhang,
+        Yuchen Yang,
+        Dan Xu,
+        Xue Yang,
+        Huaxi Huang,
+        Hongjie Zhang,
+        Ziwei Liu,
+        Xiao Sun,
+        Dingwen Zhang<span>&#8224;</span>,
+        Zhihang Zhong<span>&#8224;</span>
+        <br>
+        <em><strong>ICML 2026, <b><font color='red'>Oral</font></b></strong></em>
+        <br>
+        <a href="https://arxiv.org/pdf/2603.07660.pdf" target="_blank">Paper</a>
+        /
+        <a href="https://visionary-laboratory.github.io/holi-spatial/" target="_blank">Project Page</a>
+        /
+        <a href="https://github.com/Visionary-Laboratory/holi-spatial" target="_blank">Code</a>
+        /
+        <a href="https://huggingface.co/Holi-Spatial" target="_blank">Dataset</a>
+        <br>
+        <p>We evolve continuous egocentric video streams into holistic 3D spatial intelligence, with large-scale spatial QA benchmarks for unified scene understanding.</p>
+      </td>
+    </tr>
+    <!-- LangSurf -->
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <img style="width:100%;max-width:100%" alt="LangSurf teaser" src="images/langsurf.png">
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://langsurf.github.io/" target="_blank">
+          <papertitle><br>LangSurf: Language-Embedded Surface Gaussians for 3D Scene Understanding</papertitle>
+        </a>
+        <br>
+        Hao Li*,
+        Minghan Qin*,
+        Zhengyu Zou*,
+        Diqi He,
+        <strong>Xinhao Ji</strong>,
+        Bohan Li,
+        Bingquan Dai,
+        Dingwen Zhang<span>&#8224;</span>,
+        Junwei Han
+        <br>
+        <em><strong>IEEE TPAMI, <b><font color='red'>Accepted</font></b></strong></em>
+        <br>
+        <a href="https://arxiv.org/pdf/2412.17635v3.pdf" target="_blank">Paper</a>
+        /
+        <a href="https://langsurf.github.io/" target="_blank">Project Page</a>
+        <br>
+        <p>We propose LangSurf, a language-embedded surface field that aligns 3D language Gaussians with object surfaces for open-vocabulary 2D and 3D scene understanding.</p>
+      </td>
+    </tr>
+    <!-- ZipGS -->
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <img style="width:100%;max-width:100%" alt="ZipGS framework" src="images/zipgs.png">
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2509.24758" target="_blank">
+          <papertitle><br>Zip-GS: Extreme Compression of 3D Gaussians with Diffusion Priors</papertitle>
+        </a>
+        <br>
+        Jiaqi Chen*,
+        <strong>Xinhao Ji</strong>*,
+        Yuanyuan Gao*,
+        Hao Li,
+        Yuning Gong,
+        Yifei Liu,
+        Dingwen Zhang<span>&#8224;</span>,
+        Dan Xu,
+        Xiao Sun,
+        Zhihang Zhong<span>&#8224;</span>
+        <br>
+        <em><strong>IEEE TMM, <b><font color='red'>Under Review</font></b></strong></em>
+        <br>
+        <a href="https://arxiv.org/pdf/2509.24758" target="_blank">Paper</a>
+        <br>
+        <p>We present ZipGS, a feed-forward framework for extreme 3D Gaussian Splatting compression and restoration using diffusion priors, achieving up to 300× compression with high-fidelity rendering.</p>
+      </td>
+    </tr>
+    <!-- EgoSteer -->
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <img style="width:100%;max-width:100%" alt="EgoSteer teaser" src="images/egosteer.png">
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://ego-steer.github.io/" target="_blank">
+          <papertitle><br>EgoSteer: A Full-Stack System Towards Steerable Dexterous Manipulation from Egocentric Videos</papertitle>
+        </a>
+        <br>
+        Yifan Zhong,
+        Zhang Chen,
+        Tianrui Guan,
+        Fanlian Zeng,
+        Yuyao Ye,
+        Tianjia He,
+        Ka Nam Lui,
+        Jiayi Li,
+        Tingrui Zhang,
+        Ruilin Yan,
+        <strong>Xinhao Ji</strong>,
+        Guangyu Zhao,
+        Wenjie Lou,
+        Jiayuan Zhang,
+        Yuanpei Chen,
+        Yaodong Yang<span>&#8224;</span>
+        <br>
+        <em><strong>CoRL 2026, <b><font color='red'>Under Review</font></b></strong></em>
+        <br>
+        <a href="https://ego-steer.github.io/" target="_blank">Project Page</a>
+        <br>
+        <p>We present EgoSteer, a full-stack system for steerable dexterous manipulation from egocentric videos, combining EgoSmith for scalable data curation with a world-model-enhanced VLA and a unified robot stack for efficient real-robot post-training.</p>
+      </td>
+    </tr>
+    <!-- Uni4DMo -->
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <img style="width:100%;max-width:100%" alt="Uni4DMo teaser" src="images/uni4dmo.png">
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <papertitle><br>Uni4DMo: Learning Universal 4D Probabilistic Spatial Prior from Heterogeneous Motion Data</papertitle>
+        <br>
+        Diqi He*,
+        <strong>Xinhao Ji</strong>*,
+        Yan Li,
+        Xuehao Gao,
+        Junwei Han,
+        Dingwen Zhang<span>&#8224;</span>
+        <br>
+        <em><strong>IEEE TPAMI, <b><font color='red'>Under Review</font></b></strong></em>
+        <br>
+        Paper (coming soon)
+        <br>
+        <p>We introduce PMF, a universal 4D Gaussian motion representation, and Uni4DMo, a diffusion model that learns a unified 4D spatial prior from heterogeneous motion data.</p>
+      </td>
+    </tr>
+  </tbody></table>
+    
+  <!-- Experience -->
+
+  <table width="100%" align="center" border="0" cellpadding="10"><tbody>
+      <br>
+          <heading>Experience</heading>
+      <br>
+
+      <tr>
+          <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/PKU.png" width="108"></td>
+          <td width="90%" valign="center">
+            <strong><papertitle>Peking University (PKU)</papertitle></strong>
+            <br> <em>2022.09 - 2027.06</em>
+            <br> <strong>Undergraduate Student</strong>
+            <br> School of EECS, Applied Physics
+          </td>
+      </tr>
+      <tr>
+        <td style="padding-left:27px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/ShanghaiAI.jpg" width="90"></td>
+        <td width="90%" valign="center">
+          <strong><papertitle>Shanghai Artificial Intelligence Laboratory</papertitle></strong>
+          <br> <em>2025.06 - 2026.02</em>
+          <br> <strong>Research Intern</strong>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/psibot.png" width="108"></td>
+        <td width="90%" valign="center">
+          <strong><papertitle>PsiBot</papertitle></strong>
+          <br> <em>2026.03 - 2026.05</em>
+          <br> <strong>Research Intern</strong>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/ropedia.png" width="108"></td>
+        <td width="90%" valign="center">
+          <strong><papertitle>MMLab@NTU, Ropedia</papertitle></strong>
+          <br> <em>2026.06 - Present</em>
+          <br> <strong>Incoming Visiting Student</strong>
+          <br> Research Advisor: Prof. Ziwei Liu
+        </td>
+      </tr>
+
+  </tbody></table>
+
+  <!-- Selected Awards and Honors -->
+  <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+          <br>
+          <heading>Selected Awards</heading>
+          <p>
+            <li>2025: Second Prize, Spatial Intelligence Visual Perception Challenge, PRCV 2025</li>
+          </p>
+     
+        </td>
+      </tr>
+  </tbody></table>
+  
+  <!-- Aknowledgements -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr>
+      <!-- <br> -->
+      <!-- <br> -->
+      <hr>
+        <p style="text-align:center">
+          This homepage is designed based on <a href="https://jonbarron.info/">Jon Barron</a>'s website. 
+
+    
+        </p>
+      </td>
+      </tr>
+  </tbody></table>
+ 
+</body>
+</html>
