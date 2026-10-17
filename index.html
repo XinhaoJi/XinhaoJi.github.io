@@ -59,6 +59,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <!-- Green palette matched to the CV; placed after the original stylesheet. -->
+  <style id="cv-green-theme">
+    :root {
+      --cv-green: #26734D;
+      --cv-green-dark: #184D33;
+      --cv-green-light: #E2F3E8;
+      --cv-green-border: #BDDCC9;
+      --cv-text: #26342D;
+      --cv-muted: #53675C;
+    }
+
+    body {
+      background: #FFFFFF;
+      color: var(--cv-text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    td, p, li, intro { color: inherit; }
+    name {
+      color: var(--cv-green-dark);
+      font-size: 30px;
+      font-weight: 600;
+    }
+    heading {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 18px 0 12px;
+      padding: 7px 12px;
+      background: var(--cv-green-light);
+      color: var(--cv-green-dark);
+      border-bottom: 2px solid var(--cv-green);
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    papertitle {
+      color: var(--cv-green);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    a, a:visited {
+      color: var(--cv-green);
+      text-decoration: none;
+      text-underline-offset: 3px;
+    }
+    a:hover {
+      color: var(--cv-green-dark);
+      text-decoration: underline;
+    }
+    a:focus-visible {
+      outline: 2px solid var(--cv-green);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+    font[color="green"],
+    font[color="red"],
+    font[color="blue"] {
+      display: inline-block;
+      padding: 0 5px;
+      border-radius: 3px;
+      background: var(--cv-green-light);
+      color: var(--cv-green-dark);
+      font-style: normal;
+    }
+    font[color="red"],
+    font[color="blue"] {
+      background: #F0F5F2;
+      color: var(--cv-muted);
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--cv-green-border);
+      margin-top: 26px;
+    }
+    li::marker { color: var(--cv-green); }
+    ::selection {
+      color: var(--cv-green-dark);
+      background: var(--cv-green-light);
+    }
+  </style>
+
 	<link rel="icon" type="image/png" href="images/icon.jpg">
 </head>
 
@@ -389,3 +473,4 @@ My research interests lie in 3D vision and physical AI.
  
 </body>
 </html>
+
