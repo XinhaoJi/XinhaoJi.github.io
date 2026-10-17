@@ -78,6 +78,32 @@
       line-height: 1.6;
     }
     td, p, li, intro { color: inherit; }
+    /* Reset legacy highlight/underline effects from stylesheet.css. */
+    body name, body heading, body papertitle,
+    body a, body a strong {
+      text-shadow: none !important;
+      box-shadow: none !important;
+      background-image: none !important;
+      text-decoration-color: currentColor !important;
+    }
+    body name, body papertitle, body a, body a strong {
+      background-color: transparent !important;
+      border-bottom: 0 !important;
+    }
+    body name, body heading, body papertitle {
+      text-decoration: none !important;
+    }
+    body name::before, body name::after,
+    body heading::before, body heading::after,
+    body papertitle::before, body papertitle::after,
+    body a::before, body a::after {
+      content: none !important;
+      display: none !important;
+    }
+    body heading {
+      background-color: var(--cv-green-light) !important;
+      border-bottom: 2px solid var(--cv-green) !important;
+    }
     name {
       color: var(--cv-green-dark);
       font-size: 30px;
@@ -473,4 +499,3 @@ My research interests lie in 3D vision and physical AI.
  
 </body>
 </html>
-
