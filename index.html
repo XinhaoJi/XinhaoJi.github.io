@@ -58,7 +58,7 @@
   <meta name="author" content="Xinhao Ji">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261118-6">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261118-7">
   <!-- Green palette matched to the CV; placed after the original stylesheet. -->
   <style id="cv-green-theme">
     :root {
@@ -86,7 +86,7 @@
       background-image: none !important;
       text-decoration-color: currentColor !important;
     }
-    body name, body papertitle, body a, body a strong {
+    body name, body papertitle, body a:not(.publication-link), body a strong {
       background-color: transparent !important;
       border-bottom: 0 !important;
     }
@@ -197,6 +197,22 @@
 
 <body>
 
+  <svg class="publication-icons" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="publication-icon-project" viewBox="0 0 24 24">
+      <path d="m2 11 10-9 10 9M5 9v12h5v-6h4v6h5V9"/>
+    </symbol>
+    <symbol id="publication-icon-paper" viewBox="0 0 24 24">
+      <path d="M6 2h8l5 5v15H6zM14 2v6h5M9 12h7m-7 4h7"/>
+    </symbol>
+    <symbol id="publication-icon-code" viewBox="0 0 24 24">
+      <path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.76-.24.76-.54v-2.09c-3.11.68-3.76-1.32-3.76-1.32-.51-1.29-1.24-1.64-1.24-1.64-1.02-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.71 2.61 1.22 3.22.95.1-.72.39-1.22.71-1.5-2.48-.28-5.09-1.24-5.09-5.53 0-1.22.44-2.22 1.15-3.01-.11-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.15a10.7 10.7 0 0 1 5.61 0c2.14-1.45 3.07-1.15 3.07-1.15.62 1.54.23 2.68.12 2.96.71.79 1.14 1.79 1.14 3.01 0 4.3-2.61 5.25-5.1 5.53.4.35.76 1.03.76 2.08v3.65c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="publication-icon-data" viewBox="0 0 24 24">
+      <ellipse cx="12" cy="5" rx="8" ry="3"/>
+      <path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>
+    </symbol>
+  </svg>
+
   <main class="homepage" id="about">
     <nav class="section-nav" aria-label="On this page">
       <a href="#about">About</a>
@@ -270,9 +286,9 @@
           <h3>EgoXperience: Learning World-Grounded Egocentric Representations from Human Experience</h3>
           <p class="publication-authors"><strong>Xinhao Ji</strong>*, Hui En Pang*, Hao Li*‡, Kairui Hu, Jiner Wang, Mingze Sun, Ziang Cao, Yalun Dai, Thang Luu, Qin Ma, Hongyi Chen, Yukang Cao, Fangzhou Hong, Zhaoxi Chen, Ziwei Liu<span>&#8224;</span></p>
           <div class="publication-links">
-            <a href="https://arxiv.org/abs/2610.26625" target="_blank" rel="noopener">arXiv</a>
-            <a href="https://ropedia.github.io/EgoXperience/" target="_blank" rel="noopener">Project Page</a>
-            <a href="https://github.com/Ropedia/EgoXperience" target="_blank" rel="noopener">GitHub</a>
+            <a class="publication-link" href="https://ropedia.github.io/EgoXperience/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-project"></use></svg>Project</a>
+            <a class="publication-link" href="https://arxiv.org/abs/2610.26625" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-paper"></use></svg>Paper</a>
+            <a class="publication-link" href="https://github.com/Ropedia/EgoXperience" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-code"></use></svg>Code</a>
           </div>
         </div>
       </article>
@@ -287,8 +303,8 @@
           </div>
           <h3>Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors</h3>
           <div class="publication-links">
-            <a href="https://github.com/Ropedia/Ropedia-Xperience-2/blob/main/assets/Xperience2-paper.pdf" target="_blank" rel="noopener">Paper</a>
-            <a href="https://ropedia.com/xperience/2-research/" target="_blank" rel="noopener">Project Page</a>
+            <a class="publication-link" href="https://ropedia.com/xperience/2-research/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-project"></use></svg>Project</a>
+            <a class="publication-link" href="https://github.com/Ropedia/Ropedia-Xperience-2/blob/main/assets/Xperience2-paper.pdf" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-paper"></use></svg>Paper</a>
           </div>
         </div>
       </article>
@@ -304,9 +320,9 @@
           <h3>Holi-World: Building Holistic World Intelligence from Human-Ego Experience</h3>
           <p class="publication-authors">Hao Li*, Xiyuan Zheng*, Yuanyuan Gao*, Yalun Dai, <strong>Xinhao Ji</strong>, Xuan-Li Chen, Jing Zhao, Fangzhou Hong, Zhaoxi Chen, Ziwei Liu<span>&#8224;</span></p>
           <div class="publication-links">
-            <a href="https://arxiv.org/abs/2610.26549" target="_blank" rel="noopener">arXiv</a>
-            <a href="https://ropedia.github.io/holi-world/" target="_blank" rel="noopener">Project Page</a>
-            <a href="https://github.com/Ropedia/holi-world" target="_blank" rel="noopener">GitHub</a>
+            <a class="publication-link" href="https://ropedia.github.io/holi-world/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-project"></use></svg>Project</a>
+            <a class="publication-link" href="https://arxiv.org/abs/2610.26549" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-paper"></use></svg>Paper</a>
+            <a class="publication-link" href="https://github.com/Ropedia/holi-world" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-code"></use></svg>Code</a>
           </div>
         </div>
       </article>
@@ -325,10 +341,10 @@
           <h3>Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence</h3>
           <p class="publication-authors">Yuanyuan Gao*, Hao Li*, Yifei Liu*, <strong>Xinhao Ji</strong>*, Yuning Gong*, Yuanjun Liao, Fangfu Liu, Manyuan Zhang, Yuchen Yang, Dan Xu, Xue Yang, Huaxi Huang, Hongjie Zhang, Ziwei Liu, Xiao Sun, Dingwen Zhang<span>&#8224;</span>, Zhihang Zhong<span>&#8224;</span></p>
           <div class="publication-links">
-            <a href="https://arxiv.org/pdf/2603.07660.pdf" target="_blank" rel="noopener">Paper</a>
-            <a href="https://visionary-laboratory.github.io/holi-spatial/" target="_blank" rel="noopener">Project Page</a>
-            <a href="https://github.com/Visionary-Laboratory/holi-spatial" target="_blank" rel="noopener">Code</a>
-            <a href="https://huggingface.co/Holi-Spatial" target="_blank" rel="noopener">Dataset</a>
+            <a class="publication-link" href="https://visionary-laboratory.github.io/holi-spatial/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-project"></use></svg>Project</a>
+            <a class="publication-link" href="https://arxiv.org/pdf/2603.07660.pdf" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-paper"></use></svg>Paper</a>
+            <a class="publication-link" href="https://github.com/Visionary-Laboratory/holi-spatial" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-code"></use></svg>Code</a>
+            <a class="publication-link" href="https://huggingface.co/Holi-Spatial" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-data"></use></svg>Dataset</a>
           </div>
         </div>
       </article>
@@ -345,8 +361,8 @@
           <h3>LangSurf: Language-Embedded Surface Gaussians for 3D Scene Understanding</h3>
           <p class="publication-authors">Hao Li*, Minghan Qin*, Zhengyu Zou*, Diqi He, <strong>Xinhao Ji</strong>, Bohan Li, Bingquan Dai, Dingwen Zhang<span>&#8224;</span>, Junwei Han</p>
           <div class="publication-links">
-            <a href="https://arxiv.org/pdf/2412.17635v3.pdf" target="_blank" rel="noopener">Paper</a>
-            <a href="https://langsurf.github.io/" target="_blank" rel="noopener">Project Page</a>
+            <a class="publication-link" href="https://langsurf.github.io/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-project"></use></svg>Project</a>
+            <a class="publication-link" href="https://arxiv.org/pdf/2412.17635v3.pdf" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-paper"></use></svg>Paper</a>
           </div>
         </div>
       </article>
@@ -363,7 +379,7 @@
           <h3>Zip-GS: Extreme Compression of 3D Gaussians with Diffusion Priors</h3>
           <p class="publication-authors">Jiaqi Chen*, <strong>Xinhao Ji</strong>*, Yuanyuan Gao*, Hao Li, Yuning Gong, Yifei Liu, Dingwen Zhang<span>&#8224;</span>, Dan Xu, Xiao Sun, Zhihang Zhong<span>&#8224;</span></p>
           <div class="publication-links">
-            <a href="https://arxiv.org/pdf/2509.24758" target="_blank" rel="noopener">Paper</a>
+            <a class="publication-link" href="https://arxiv.org/pdf/2509.24758" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-paper"></use></svg>Paper</a>
           </div>
         </div>
       </article>
@@ -380,8 +396,8 @@
           <h3>EgoSteer: A Full-Stack System Towards Steerable Dexterous Manipulation from Egocentric Videos</h3>
           <p class="publication-authors">Yifan Zhong*, Zhang Chen*, Tianrui Guan*, Fanlian Zeng*, Yuyao Ye, Tianjia He, Ka Nam Lui, Jiayi Li, Tingrui Zhang, Ruilin Yan, <strong>Xinhao Ji</strong>, Guangyu Zhao, Wenjie Lou, Jiayuan Zhang, Yuanpei Chen<span>&#8224;</span>, Yaodong Yang<span>&#8224;</span></p>
           <div class="publication-links">
-            <a href="https://ego-steer.github.io/" target="_blank" rel="noopener">Project Page</a>
-            <a href="https://github.com/egosteer/egosteer" target="_blank" rel="noopener">Code</a>
+            <a class="publication-link" href="https://ego-steer.github.io/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-project"></use></svg>Project</a>
+            <a class="publication-link" href="https://github.com/egosteer/egosteer" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#publication-icon-code"></use></svg>Code</a>
           </div>
         </div>
       </article>

@@ -330,9 +330,39 @@ span.highlight {
   color: var(--cv-text);
 }
 
-.publication-links a {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
+.publication-icons {
+  display: none;
+}
+
+.publication-links {
+  gap: 7px;
+}
+
+.publication-links .publication-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border: 1px solid var(--cv-green-border);
+  border-radius: 7px;
+  color: var(--cv-green-dark);
+  text-decoration: none;
+}
+
+.publication-links .publication-link:hover {
+  background: var(--cv-green-light);
+  border-color: var(--cv-green);
+}
+
+.publication-link svg {
+  width: 15px;
+  height: 15px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .experience-list {
