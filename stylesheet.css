@@ -299,18 +299,23 @@ span.highlight {
 
 .publication-venue,
 .publication-status {
-  padding: 1px 8px;
-  border-radius: 4px;
+  padding: 2px 9px;
+  border-radius: 6px;
 }
 
 .publication-venue {
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: #faece7;
+  color: #993c1d;
 }
 
 .publication-status {
   background: var(--surface);
   color: var(--muted);
+}
+
+.publication-status-highlight {
+  background: var(--accent-soft);
+  color: var(--accent);
 }
 
 .publication h3 {
