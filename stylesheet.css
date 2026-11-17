@@ -490,16 +490,6 @@ a.icon-link:hover {
   white-space: nowrap;
 }
 
-.profile-details {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0 32px;
-}
-
-.profile-details p {
-  margin: 0;
-}
-
 @media (max-width: 580px) {
   .homepage[id],
   .homepage section[id],
@@ -511,8 +501,7 @@ a.icon-link:hover {
     padding-block-start: 24px;
   }
 
-  .experience-list li,
-  .profile-details {
+  .experience-list li {
     grid-template-columns: minmax(0, 1fr);
   }
 
