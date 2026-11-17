@@ -169,11 +169,62 @@ abs {
 span.highlight {
   background-color: #ffffd0;
 }
+.site-header {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header-inner,
 .homepage {
   box-sizing: border-box;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding-inline: clamp(16px, 3vw, 28px);
+}
+
+.site-header-inner,
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.site-header-inner {
+  justify-content: space-between;
+  gap: 4px 20px;
+  min-height: 54px;
+  padding-block: 8px;
+}
+
+.site-nav {
+  gap: 4px clamp(10px, 2.5vw, 23px);
+}
+
+.site-header a.site-name {
+  color: var(--text);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.site-header .site-nav a {
+  color: var(--muted);
+}
+
+.site-header .site-nav a:hover {
+  color: var(--accent);
+}
+
+.homepage {
+  padding-block: 32px 12px;
+}
+
+.homepage[id],
+.homepage section[id],
+.homepage article[id] {
+  scroll-margin-top: 86px;
 }
 
 .profile-links,
@@ -189,7 +240,7 @@ span.highlight {
   grid-template-columns: minmax(0, 1fr) clamp(110px, 21vw, 164px);
   gap: 24px;
   align-items: center;
-  margin: 26px 0;
+  margin: 0 0 34px;
 }
 
 .profile h1 {
@@ -224,7 +275,7 @@ span.highlight {
 .news-list {
   list-style: none;
   margin: 0;
-  padding: 0 12px;
+  padding: 0 8px 0 0;
 }
 
 .news-list li {
@@ -368,18 +419,54 @@ a.icon-link:hover {
   stroke-linejoin: round;
 }
 
+.talk-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 20px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.talk-card > div {
+  flex: 1 1 420px;
+}
+
+.talk-card h3,
+.talk-card p {
+  margin: 0;
+}
+
+.talk-card h3 {
+  margin-block: 3px;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.talk-meta {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.talk-theme,
+.experience-list h3 + p {
+  color: var(--muted);
+}
+
 .experience-list {
   list-style: none;
   margin: 0;
-  padding: 0 12px;
+  padding: 0;
 }
 
 .experience-list li {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(142px, 18%) minmax(0, 1fr);
   align-items: baseline;
-  gap: 2px 16px;
+  gap: 2px 20px;
   padding: 8px 0;
 }
 
@@ -393,20 +480,36 @@ a.icon-link:hover {
 }
 
 .experience-list h3 {
-  color: var(--text);
   font-size: 15px;
 }
 
-.experience-dates {
+.experience-list .experience-dates {
   color: var(--muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
 
-.site-footer {
-  text-align: center;
+.profile-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 32px;
+}
+
+.profile-details p {
+  margin: 0;
 }
 
 @media (max-width: 580px) {
+  .homepage {
+    padding-block-start: 24px;
+  }
+
+  .experience-list li,
+  .profile-details {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .profile {
     grid-template-columns: minmax(0, 1fr);
     gap: 16px;

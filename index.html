@@ -58,7 +58,7 @@
   <meta name="author" content="Xinhao Ji">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261118-12">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261118-13">
   <style>
     :root {
       --accent: #5b50d6;
@@ -72,7 +72,7 @@
     body {
       background: #fff;
       color: var(--text);
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Lato, Arial, Helvetica, sans-serif;
       font-size: 14px;
       line-height: 1.6;
     }
@@ -93,19 +93,8 @@
       outline-offset: 3px;
     }
 
-    hr {
-      border: 0;
-      border-top: 1px solid var(--border);
-      margin-top: 26px;
-    }
-
-    li::marker {
-      color: var(--accent);
-    }
-
     .cv-section {
-      width: min(100%, 1220px);
-      margin: 0 auto 24px;
+      margin: 0 0 32px;
     }
 
     .cv-section-heading {
@@ -113,19 +102,9 @@
       padding: 0 0 8px;
       color: var(--text);
       border-bottom: 1px solid var(--border);
-      font-size: 21px;
-      font-weight: 600;
+      font-size: 20px;
+      font-weight: 700;
       line-height: 1.4;
-    }
-
-    .cv-section-list {
-      margin: 6px 0 0;
-      padding-left: 2.2em;
-      list-style: disc;
-    }
-
-    .cv-section-list li {
-      margin-bottom: 8px;
     }
 
     ::selection {
@@ -159,6 +138,18 @@
       <path d="m2 9 10-5 10 5-10 5-10-5Zm5 2.5V17c2.8 2.4 7.2 2.4 10 0v-5.5M22 9v7"/>
     </symbol>
   </svg>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-name" href="#about">Xinhao Ji</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+        <a href="#selected-awards">Awards</a>
+      </nav>
+    </div>
+  </header>
 
   <main class="homepage" id="about">
     <header class="profile">
@@ -362,70 +353,61 @@
 
     <section id="invited-talks" class="cv-section" aria-labelledby="talks-heading">
       <h2 id="talks-heading" class="cv-section-heading">Invited Talks</h2>
-      <ul class="cv-section-list">
-        <li>
-          <strong lang="zh-CN">EgoXperience：从人类第一人称经验中学习与物理世界对齐的三维表征</strong><br>
-          AI TIME Webinar · <time datetime="2026-11-19">Nov 19, 2026</time><br>
-          Event theme: From Human Experience to Robot Action: Physical RSI — MMLab@NTU<br>
-          <a href="https://mp.weixin.qq.com/s/EhtYrzX7t9KXlMvFPGZJxg" target="_blank" rel="noopener">Link</a>
-        </li>
-      </ul>
+      <article class="talk-card">
+        <div>
+          <p class="talk-meta">AI TIME Webinar <span aria-hidden="true">·</span> <time datetime="2026-11-19">Nov 19, 2026</time></p>
+          <h3 lang="zh-CN">EgoXperience：从人类第一人称经验中学习与物理世界对齐的三维表征</h3>
+          <p class="talk-theme">Event theme: From Human Experience to Robot Action: Physical RSI — MMLab@NTU</p>
+        </div>
+        <a class="icon-link" href="https://mp.weixin.qq.com/s/EhtYrzX7t9KXlMvFPGZJxg" target="_blank" rel="noopener" aria-label="Link to AI TIME webinar announcement">Link</a>
+      </article>
     </section>
 
     <section id="experience" class="cv-section" aria-labelledby="experience-heading">
       <h2 id="experience-heading" class="cv-section-heading">Experience</h2>
       <ul class="experience-list">
         <li>
+          <p class="experience-dates"><time datetime="2022-09">Sep 2022</time> – <time datetime="2027-06">Jun 2027</time></p>
           <div>
-            <h3>Peking University (PKU)</h3>
+            <h3>Peking University</h3>
             <p>Undergraduate Student, School of EECS, Applied Physics</p>
           </div>
-          <p class="experience-dates"><time datetime="2022-09">Sep 2022</time> – <time datetime="2027-06">Jun 2027</time></p>
         </li>
         <li>
+          <p class="experience-dates"><time datetime="2025-06">Jun 2025</time> – <time datetime="2026-02">Feb 2026</time></p>
           <div>
             <h3>Shanghai Artificial Intelligence Laboratory</h3>
             <p>Research Intern</p>
           </div>
-          <p class="experience-dates"><time datetime="2025-06">Jun 2025</time> – <time datetime="2026-02">Feb 2026</time></p>
         </li>
         <li>
+          <p class="experience-dates"><time datetime="2026-03">Mar 2026</time> – <time datetime="2026-05">May 2026</time></p>
           <div>
             <h3>PsiBot</h3>
             <p>Research Intern</p>
           </div>
-          <p class="experience-dates"><time datetime="2026-03">Mar 2026</time> – <time datetime="2026-05">May 2026</time></p>
         </li>
         <li>
+          <p class="experience-dates"><time datetime="2026-06">Jun 2026</time> – Present</p>
           <div>
             <h3>MMLab@NTU and Ropedia</h3>
             <p>Visiting Student at MMLab@NTU and Research Intern at Ropedia</p>
           </div>
-          <p class="experience-dates"><time datetime="2026-06">Jun 2026</time> – Present</p>
         </li>
       </ul>
     </section>
 
-    <!-- Academic Services -->
-    <section id="academic-services" class="cv-section" aria-labelledby="academic-services-heading">
-      <h2 id="academic-services-heading" class="cv-section-heading">Academic Services</h2>
-      <ul class="cv-section-list">
-        <li><span style="color:var(--accent); font-weight:700; margin-right:8px;">&#10003;</span> Conference Reviewer: ICLR</li>
-      </ul>
-    </section>
+    <div class="profile-details">
+      <section id="academic-services" class="cv-section" aria-labelledby="academic-services-heading">
+        <h2 id="academic-services-heading" class="cv-section-heading">Academic Services</h2>
+        <p><strong>Conference Reviewer</strong><br>ICLR</p>
+      </section>
 
-    <!-- Selected Awards -->
-    <section id="selected-awards" class="cv-section" aria-labelledby="selected-awards-heading">
-      <h2 id="selected-awards-heading" class="cv-section-heading">Selected Awards</h2>
-      <ul class="cv-section-list">
-        <li>2025: Second Prize, Spatial Intelligence Visual Perception Challenge, PRCV 2025</li>
-      </ul>
-    </section>
-
-    <footer class="site-footer">
-      <hr>
-      <p>This homepage is designed based on <a href="https://jonbarron.info/">Jon Barron</a>'s website.</p>
-    </footer>
+      <section id="selected-awards" class="cv-section" aria-labelledby="selected-awards-heading">
+        <h2 id="selected-awards-heading" class="cv-section-heading">Selected Awards</h2>
+        <p><strong>Second Prize · PRCV 2025</strong><br>Spatial Intelligence Visual Perception Challenge</p>
+      </section>
+    </div>
   </main>
 </body>
 </html>
