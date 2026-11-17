@@ -267,6 +267,7 @@ span.highlight {
 .news-list li {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   gap: 2px 16px;
   padding: 8px 0;
 }
@@ -276,10 +277,21 @@ span.highlight {
 }
 
 .news-list time {
-  min-width: 70px;
-  color: var(--cv-muted);
-  font-weight: 600;
+  box-sizing: border-box;
+  min-width: 74px;
+  padding: 2px 8px;
+  border-radius: 5px;
+  background: var(--cv-green-light);
+  color: var(--cv-green-dark);
+  font-size: 12px;
+  font-weight: 700;
   font-variant-numeric: tabular-nums;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.news-list a {
+  font-weight: 700;
 }
 
 .news-list span {
