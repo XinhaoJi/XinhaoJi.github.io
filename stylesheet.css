@@ -501,6 +501,12 @@ a.icon-link:hover {
 }
 
 @media (max-width: 580px) {
+  .homepage[id],
+  .homepage section[id],
+  .homepage article[id] {
+    scroll-margin-top: 112px;
+  }
+
   .homepage {
     padding-block-start: 24px;
   }
