@@ -217,6 +217,39 @@ span.highlight {
   border-radius: 8px;
 }
 
+.affiliations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 24px;
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+.affiliations a {
+  display: grid;
+  place-items: center;
+  min-width: 44px;
+  min-height: 48px;
+}
+
+.affiliations img {
+  display: block;
+  max-width: 118px;
+  max-height: 44px;
+  width: auto;
+  height: auto;
+}
+
+.affiliation-ropedia img {
+  box-sizing: border-box;
+  padding: 5px 7px;
+  background: #20362b;
+  border-radius: 4px;
+}
+
 .news-list {
   list-style: none;
   margin: 0;
