@@ -176,19 +176,12 @@ span.highlight {
   padding: 0 16px;
 }
 
-.section-nav,
 .profile-links,
 .publication-meta,
 .publication-links {
   display: flex;
   flex-wrap: wrap;
   gap: 6px 16px;
-}
-
-.section-nav {
-  justify-content: center;
-  padding: 12px 0;
-  border-bottom: 1px solid var(--border);
 }
 
 .profile {
