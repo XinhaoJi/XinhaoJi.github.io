@@ -216,36 +216,6 @@ span.highlight {
   border-radius: 8px;
 }
 
-.affiliations {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  list-style: none;
-  margin: 0 0 24px;
-  padding: 0;
-}
-
-.affiliations a {
-  display: grid;
-  align-items: center;
-  min-height: 44px;
-}
-
-.affiliations img {
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: min(13vw, 118px);
-  max-height: 44px;
-}
-
-.affiliation-ropedia img {
-  box-sizing: border-box;
-  padding: 4px clamp(4px, 1vw, 8px);
-  background: #20362b;
-  border-radius: 4px;
-}
-
 .news-scroll {
   height: 7.5rem;
   overflow-y: scroll;
@@ -363,6 +333,40 @@ span.highlight {
 .publication-links a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
+}
+
+.experience-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 12px;
+}
+
+.experience-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2px 16px;
+  padding: 8px 0;
+}
+
+.experience-list li + li {
+  border-top: 1px solid var(--cv-green-border);
+}
+
+.experience-list h3,
+.experience-list p {
+  margin: 0;
+}
+
+.experience-list h3 {
+  color: var(--cv-green-dark);
+  font-size: 15px;
+}
+
+.experience-dates {
+  color: var(--cv-muted);
+  white-space: nowrap;
 }
 
 .site-footer {
