@@ -330,15 +330,16 @@ span.highlight {
   color: var(--cv-text);
 }
 
-.publication-icons {
+.link-icons {
   display: none;
 }
 
+.profile-links,
 .publication-links {
   gap: 7px;
 }
 
-.publication-links .publication-link {
+.icon-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -349,12 +350,12 @@ span.highlight {
   text-decoration: none;
 }
 
-.publication-links .publication-link:hover {
+.icon-link:hover {
   background: var(--cv-green-light);
   border-color: var(--cv-green);
 }
 
-.publication-link svg {
+.icon-link svg {
   width: 15px;
   height: 15px;
   flex: none;
