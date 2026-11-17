@@ -250,6 +250,18 @@ span.highlight {
   border-radius: 4px;
 }
 
+.news-scroll {
+  height: 7.5rem;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+  scrollbar-color: var(--cv-green) var(--cv-green-light);
+}
+
+.news-scroll:focus-visible {
+  outline: 2px solid var(--cv-green);
+  outline-offset: 2px;
+}
+
 .news-list {
   list-style: none;
   margin: 0;
