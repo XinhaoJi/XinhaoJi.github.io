@@ -196,8 +196,7 @@ span.highlight {
   grid-template-columns: minmax(0, 1fr) clamp(110px, 21vw, 164px);
   gap: 24px;
   align-items: center;
-  max-width: 800px;
-  margin: 26px auto;
+  margin: 26px 0;
 }
 
 .profile h1 {
